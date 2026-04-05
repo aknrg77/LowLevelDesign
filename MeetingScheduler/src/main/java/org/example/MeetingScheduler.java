@@ -5,6 +5,13 @@ import java.util.List;
 public class MeetingScheduler {
     MeetingRoomManager meetingRoomManager;
 
+    MeetingScheduler(){
+        meetingRoomManager = new MeetingRoomManager();
+    }
+
+    public void addMeetingRoom (String id, int capacity){
+        meetingRoomManager.addRoom(id, capacity);
+    }
 
     public void bookRoom(List<User> users, int start, int end, int capacity){
 

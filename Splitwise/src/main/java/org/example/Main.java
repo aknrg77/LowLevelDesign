@@ -3,7 +3,7 @@ package org.example;
 import java.util.*;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
 
         SplitService splitService = new SplitService();
 

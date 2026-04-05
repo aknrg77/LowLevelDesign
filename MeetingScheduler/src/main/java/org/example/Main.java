@@ -1,10 +1,21 @@
+package org.example;
+import java.util.*;
 
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
+        MeetingScheduler meetingScheduler = new MeetingScheduler();
+        meetingScheduler.addMeetingRoom("1", 5);
+        meetingScheduler.addMeetingRoom("2", 3);
+        meetingScheduler.addMeetingRoom("3", 6);
+        meetingScheduler.addMeetingRoom("4", 3);
 
+
+        List<User> users = new ArrayList<>();
+        for(int i = 0; i<5; i++){
+            users.add(new User(UUID.randomUUID().toString()));
         }
+
+        meetingScheduler.bookRoom(users, 1, 3, 5);
+        meetingScheduler.bookRoom(users, 2, 4, 3);
     }
 }

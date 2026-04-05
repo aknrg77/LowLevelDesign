@@ -206,7 +206,7 @@ class FlipkartMinutesService {
 }
 
 // --- Driver Program ---
-public class FlipkartMinutesApp {
+public class Main {
     public static void main(String[] args) throws InterruptedException {
         FlipkartMinutesService system = new FlipkartMinutesService();
 

@@ -7,10 +7,12 @@
     <groupId>org.example</groupId>
     <artifactId>Splitwise</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>FlipkartMinute</module>
-    </modules>
+    <packaging>jar</packaging>
 
+    <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 </project>
