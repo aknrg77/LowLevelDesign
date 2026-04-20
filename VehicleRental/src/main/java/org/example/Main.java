@@ -63,8 +63,6 @@ public class Main {
                 "2026-03-24 12:00"
         );
 
-        
-
         //this should say no vehicle 
         service.book(
                 VehicleType.SEDAN,
