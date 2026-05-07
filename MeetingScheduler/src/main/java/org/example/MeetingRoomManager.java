@@ -38,6 +38,7 @@ public class MeetingRoomManager {
 
     public void book(MeetingRoom meetingRoom, List<User> users, int start, int end){
         MeetingRoomCalendar time = new MeetingRoomCalendar(start, end);
+        meetingRoom.users = users;
         meetingRoomTime.put(meetingRoom, time);
         System.out.println("Meeting Room " + meetingRoom.id + " Booked!!!");
 
