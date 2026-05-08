@@ -2,14 +2,15 @@ package org.example;
 
 import java.util.HashMap;
 
-public class Directory {
+public class Directory extends FileSystemNode{
     String name;
     Directory parent;
-    HashMap<String, Directory> children;
+    HashMap<String, FileSystemNode> children = new HashMap<>();
 
     Directory(String name, Directory parent){
-        this.name = name;
-        this.parent = parent;
-        children = new HashMap<>();
+        super(name, parent);
     }
+
+    @Override
+    public boolean isDirectory() { return true; }
 }
